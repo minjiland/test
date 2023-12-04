@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>melon_subpage</title>
+  <!--main.css-->
+  <link rel="stylesheet" href="./css/main.css">
+  <!--google_font-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <!--font-awesome_cdnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--jquery-->
+  <script src="./js/jquery-3.7.1.min.js"></script>
+ 
+</head>
+<body>
+  
+  <input type="checkbox" id="chk_lnb">
+
+  <input type="radio" id="chk_chart" name="sub_menu" checked>
+  <input type="radio" id="chk_dj" name="sub_menu">
+  <input type="radio" id="chk_artist" name="sub_menu">
+  <input type="radio" id="chk_special" name="sub_menu">
+  <input type="radio" id="chk_my" name="sub_menu">
+
+  <input type="checkbox" id="chk_mode">
+<div class="header_box">
+
+  <header class="header">
+    <div class="logo">
+      <a href="../../index.html">
+        <span>  
+          <img src="./img/bi/logo_opecity.png" alt="logo_img">
+        </span>
+        <span>
+          <img src="./img/bi/logo.png" alt="logo_hover_img">
+        </span>
+      </a>
+    </div>
+ 
+    <nav class="header_menu_box">
+      <ul class="search_box">
+        <li class="search_menu">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+      </ul>
+      <label for="chk_lnb">
+        <li class="ham_menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </li>
+       </label>
+    </nav>
+
+    <nav class="lnb_box">
+      <div class="lnb_h">
+
+        <div class="lnb_symbol">
+          <a href="../../index.html">
+            <img src="./img/bi/symbol_01.png" alt="symbol_img">
+          </a>
+        </div>
+
+        <div class="lnb_login_box">
+
+          <div class="lnb_login">
+           <img src="./img/icon/lnb_user.png" alt="lnb_login_img">
+          </div>
+
+          <p>로그인</p>
+
+        </div>
+
+        <ul class="ticket_box">
+          <li class="ticket">
+            <img src="./img/icon/lnb_tikat.png" alt="lnb_이용권_background-color">
+            <p>이용권 구매</p>
+          </li> 
+        </ul>
+      </div>
+      
+      <div class="lnb_b">
+        <label for="chk_chart">
+          <ul class="lnb_chart main">
+           <li class="lnb_chart_img">
+              <img src="./img/icon/lnb_icon_01.png" alt="melon_chart_img">
+            </li>
+            <li class="melon_chart p">멜론차트</li>
+
+            <ul class="melon_chart_sub sub">
+              <li>TOP100</li>
+              <li>HOT100</li>
+              <li>일간</li>
+              <li>월간</li>
+              <li><a href="../period/index.html"><green>시대</green></a></li>
+              <li>장르</li>
+            </ul>
+         </ul>
+       </label>
+
+        <label for="chk_dj">
+          <ul class="lnb_dj main">
+            <li class="lnb_dj_img">
+            <img src="./img/icon/lnb_icon_02.png" alt="melon_dj_img">
+            </li>
+            <li class="melon_dj p">멜론DJ</li>
+          
+            <ul class="melon_dj_sub sub">
+              <li>투데이</li>
+              <li>전문가 신곡</li>
+              <li>#테마장르</li>
+              <li>파워DJ</li>
+              <li>인기</li>
+            </ul>
+          </ul>
+        </label>
+
+        <label for="chk_artist">
+          <ul class="lnb_artist main">
+            <li class="lnb_artist_img">
+              <img src="./img/icon/lnb_icon_03.png" alt="artist_img">
+            </li>
+            <li class="melon_artist p">아티스트</li>
+
+            <ul class="artist_sub sub">
+              <li><a href="#"><green>NOW</green></a></li>
+              <li>아티스트 랭킹</li>
+              <li>마이 랭킹</li>
+            </ul>
+          </ul>
+        </label>
+
+        <label for="chk_special">
+          <ul class="lnb_special main">
+            <li class="lnb_special_img">
+              <img src="./img/icon/lnb_icon_04.png" alt="special_img">
+            </li>
+            <li class="melon_special p">스페셜</li>
+
+            <ul class="special_sub sub">
+              <li>멜론의 전당</li>
+              <li>매거진</li>
+              <li>MMA</li>
+              <li>주간인기상</li>
+              <li>어학</li>
+            </ul>
+          </ul>
+        </label>
+
+          <ul class="lnb_music_wv_box main">
+            <li class="lnb_music_wv_img">
+              <img src="./img/icon/lnb_icon_05.png" alt="music_wave_img">
+            </li>
+            <li class="melon_music_wv p">
+              <a href="#!">뮤직웨이브</a>
+            </li>
+          </ul>
+
+        <label for="chk_my">
+          <ul class="lnb_my_music main">
+            <li class="lnb_my_music_img">
+              <img src="./img/icon/lnb_icon_06.png" alt="my_music_img">
+            </li>
+            <li class="melon_my_music p">마이뮤직</li>
+
+            <ul class="my_music_sub sub">
+              <li>좋아요</li>
+              <li>플레이리스트</li>
+              <li>최근 들은</li>
+              <li>많이 들은</li>
+              <li>팬 맺은 아티스트</li>
+              <li>뮤직 DNA</li>
+              <li>다운로드한</li>
+            </ul>
+          </ul>
+        </label>
+      </div>
+
+      <ul class="dark_mode_box">
+        <li class="dark_mode">
+            <span><p>다크모드</p></span>
+            <span><p>화이트모드</p></span>
+        </li>
+        <li class="switch">
+          <label for="chk_mode">
+            <span class="switch_on"></span>
+          </label>
+        </li>
+      </ul>
+ 
+      
+    </nav>
+  </header>
+</div>
+
+<div class="wrap"> 
+
+ <div class="swiper mySwiper" id="visual_main_box">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#!">
+          <picture>
+            <source media="(min-width: 601px)" srcset="./img/side_banner_web.jpg">
+            <source media="(min-width: 300px)" srcset="./img/side_banner_mobile.jpg">
+            <img src="./img/side_banner_web.jpg" alt="visual_main_01_img">
+          </picture>
+        </a>
+      </div>
+    </div>
+</div>
+
+  <!--visual_main-->
+ 
+ 
+   <!-- Swiper -->
+   <div class="swiper mySwiper swiper_music_box">
+    <div class="swiper-wrapper swiper_music mySwiper_music">
+
+          <div class="swiper-slide">
+            <div><img src="./img/icon/paly_50.png" alt="play_img"></div>
+            <img src="./img/album_nct_01.jpg" alt="album_img_01">
+            <div class="fff">Fact Check(불가사의 
+              <br>
+              <span>NCT127 - The 5th Album</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div><img src="./img/icon/paly_50.png" alt="play_img"></div>
+            <img src="./img/album_nct_02.jpg" alt="album_img_02">
+            <div class="fff">질주 (2 Baddies)
+              <br>
+              <span>NCT127 - The 4th Album</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div><img src="./img/icon/paly_50.png" alt="play_img"></div>
+            <img src="./img/album_nct_03.jpg" alt="album_img_03">
+            <div class="fff">Sticker
+              <br>
+              <span>NCT127 - The 3th Album</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div><img src="./img/icon/paly_50.png" alt="play_img"></div>
+            <img src="./img/album_nct_04.jpg" alt="album_img_04">
+            <div class="fff">영웅 (英雄; Kick It)
+              <br>
+              <span>NCT127 - The 2th Album</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div><img src="./img/icon/paly_50.png" alt="play_img"></div>
+            <img src="./img/album_nct_05.jpg" alt="album_img_05">
+            <div class="fff">Regular
+              <br>
+              <span>NCT127 - The 1th Album</span>
+            </div>
+          </div>
+         
+      
+    </div>
+  </div>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper_music_box = new Swiper(".swiper_music_box", {
+      watchSlidesProgress: true,
+      width:100,
+      rewind: true,
+      breakpoints: {
+        601: {
+          width: 220,
+        }
+      }
+    });
+  </script>
+ <!--album-->
+
+ <p class="title title_01">추천 아티스트</p>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper artist_img_box">
+    <div class="swiper-wrapper artist_img">
+      <div class="swiper-slide artist_img_01">
+        <li>
+          <img src="./img/artist_profil_txt.jpg" alt="artist_01_img">
+        </li>
+        <li>
+          <p>투모로우바이투게더</p>
+        </li>
+      </div>
+
+      <div class="swiper-slide artist_img_02">
+        <li>
+          <img src="./img/artist_profil_iu.jpg" alt="artist_02_img">
+        </li>
+        <li>
+          <p>아이유</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_03">
+        <li>
+          <img src="./img/artist_profil_nflyingjpg.jpg" alt="artist_03_img">
+        </li>
+        <li>
+          <p>엔플라잉</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_04">
+        <li>
+          <img src="./img/artist_profil_aespa.jpg" alt="artist_04_img">
+        </li>
+        <li>
+          <p>에스파</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_05">
+        <li>
+          <img src="./img/artist_profil_theboys.jpg" alt="artist_05_img">
+        </li>
+        <li>
+          <p>더보이즈</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_06">
+        <li>
+          <img src="./img/artist_profil_ive.jpg" alt="artist_06_img">
+        </li>
+        <li>
+          <p>아이브</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_07">
+        <li>
+          <img src="./img/artist_profil_lesserafim.jpg" alt="artist_06_img">
+        </li>
+        <li>
+          <p>르세라핌</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_08">
+        <li>
+          <img src="./img/artist_profil_jk.jpg" alt="artist_08_img">
+        </li>
+        <li>
+          <p>정국</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_09">
+        <li>
+          <img src="./img/artist_profil_newjeans.jpg" alt="artist_09_img">
+        </li>
+        <li>
+          <p>뉴진스</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_10">
+        <li>
+          <img src="./img/artist_profil_straykids.jpg" alt="artist_10_img">
+        </li>
+        <li>
+          <p>스트레이트키즈</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_11">
+        <li>
+          <img src="./img/artist_profil_idle.jpg" alt="artist_11_img">
+        </li>
+        <li>
+          <p>(여자)아이들</p>
+        </li>
+      </div>
+      <div class="swiper-slide artist_img_12">
+        <li>
+          <img src="./img/artist_profil_sunmi.jpg" alt="artist_12_img">
+        </li>
+        <li>
+          <p>선미</p>
+        </li>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    var swiper_artist_box = new Swiper(".artist_img_box", {
+      watchSlidesProgress: true,
+      width:240,
+      rewind: true,
+    });
+  </script>
+
+ <p class="title">더 많은 아티스트 만나보기</p>
+
+ <ul class="artist_btn">
+  <li><p>NOW</p></li>
+  <li><p>아티스트 랭킹</p></li>
+  <li><p>마이 랭킹</p></li>
+ </ul>
+
+<section class="card_wrapper">
+  <article>
+    <div class="card_box">  
+      <div class="card_jisoo">
+        <ul>
+          <li>
+            <img src="./img/card_jisoo.jpg" alt="card_img_01">
+          </li>
+          <li>
+            <p>
+              다채로운 매력을 담아낸 지수 첫 솔로 앨범, [ME]
+            </p>
+            <P>
+              BLACKPINK 솔로 프로젝트의 마지막 주자 지수 (JISOO)가 첫 솔로 앨범을 발매했습니다.
+            <br> 
+              다채로운 매력을 담아낸 지수 (JISOO)의 첫 솔로 앨범 [ME]의 이야기부터 뮤직비디오 촬영 현장 비하인드까지 지금 바로 만나보세요!
+            </P>
+          </li>
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_jisoo.jpg" alt="jisoo_img">
+            </div>
+            <p>지수(JISOO)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="card_jerobaseone">
+        <ul>
+          <li>
+            <img src="./img/card_zerobaseone.jpg" alt="card_img_02">
+          </li>
+          <li>
+            <p>
+              ZEROBASEONE 1theK '퍼스트룩' 촬영 현장 비하인드
+            </p>
+            <p>
+              제로(0)에서 시작하여 원(1)으로 탄생한 ZEROBASEONE의 찬란한 여정이 시작되었는데요!
+            <br>
+              7월 10일에 발매되었던 ZEROBASEONE의 첫 번째 미니 앨범 [YOUTH IN THE SHADE] 많이 들으셨나요?! 타이틀 곡 'In Bloom'을 포함하여 총 6개의 트랙으로 구성된 이번 앨범은 트렌디한 음악과 청량함을 가득 머금은 에너제틱한 퍼포먼스로 K-POP 시장에 당찬 출사표를 던졌답니다~!
+              오늘은 1theK와 함께 지금까지 어디에서도 보지 못하였던 'In Bloom'의 색다른 라이브와 보는 재미를 더하는 벌칙 코스튬까지! 이 모든 현장을 저희가 직접 가지고 왔습니다~! 지금 바로 1theK '네컷라이브' 현장 비하인드를 공개합니다!
+            </p>
+          </li>
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_zerobaseone.jpg" alt="zerobaseone_img">
+            </div>
+            <p>ZEROBASEONE</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card_box">
+      <div class="card_bts">
+        <ul>
+          <li>
+            <img src="./img/card_bts.jpeg" alt="card_img_03">
+          </li>
+          <li>
+            <p>
+              방탄소년단, 신보에 미공개곡부터 데모 버전·팬송까지 다 담았다
+            </p>
+            <p>
+              방탄소년단이 곧 발매할 ‘’프루프(proof)앨범에 특별한 곡들을 수록합니다! 총 3장의 CD로 구성된 '프루프'의 첫 번째 CD에는 방탄소년단의 역대 앨범 타이틀곡이 총망라됐고,두 번째 CD는 일곱 멤버가 직접 고른 솔로곡과 유닛곡으로 구성되어있다고 해요~! 세 번째 CD의 마지막은 팬들을 향한 방탄소년단의 사랑과 감사의 마음을 담아 공개한다고 합니다! 팬들에 대한 애정을 듬뿍 받은 비하인드 앨범 제작기를 공개합니다! 
+            </p>
+          </li>
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_bts.jpg" alt="bts_img">
+            </div>
+            <p>방탄소년단 (BTS)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="card_dawn">
+        <ul>
+          <li>
+            <img src="./img/card_dawn.jpg" alt="card_img_04">
+          </li>
+          <li>
+            <p>
+              던 (DAWN)이 느낀 사랑에 대한 감정을 담은, [Narcissus (나르시스)]
+            </p>
+            <p>
+              앳에어리어 (AT AREA) 소속 아티스트 던 (DAWN)이 새로운 EP [Narcissus (나르시스)] 를 발매한다. 이번 앨범은 총 여덟 트랙으로, 지난 4월 발매된 '빛이 나는 너에게'를 잇는 잔잔한 R&B/발라드부터 던의 화려한 퍼포먼스가 어우러진 팝한 음악까지 다채롭게 구성되어 있다.
+            <br>
+              [Narcissus (나르시스)]는 '사랑'이라는 감정을 통해 자아를 찾으며 성장해가는 한 사람의 이야기를 담아냈다. 올해 완벽한 솔로 아티스트로 거듭난 던 (DAWN)의 모습을 이번 앨범을 통해 확인할 수 있길 바란다.
+            </p>
+          </li>
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_dawn.jpg" alt="dawn_img">
+            </div>
+            <p>던 (DAWN)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <article>
+    <div class="artist_box">
+      <div class="card_jenne">
+        <ul>
+          <li>
+            <img src="./img/card_jennie.png" alt="card_img_05">
+          </li>
+          <li>
+            <p class="fff">
+              제니 (JENNIE)가 팬들에게 보내는 특별한 선물, [You & Me]
+            </p>
+          </li> 
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_jennie.jpg" alt="jenne_img">
+            </div>
+            <p>제니 (JENNIE)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="card_hwasa">
+        <ul>
+          <li>
+            <img src="./img/card_hwasa.jpg" alt="card_img_06">
+          </li>
+          <li>
+            <p>
+              '최초 공개' 화사 (HWASA) - I Love My Body
+            </p>
+            <p>
+              언제나 자신감 넘치는 모습으로 무대에서 노래해온 가수 화사. 더 건강하고 당당한 모습으로 그녀가 돌아왔습니다. ‘I Love My Body’를 외치며!
+            <br>
+              화사가 1년 10개월 만에 발표한 디지털 싱글 ‘I Love My Body’는 1970년대 모타운 소울 음악을 현대적으로 풀어낸 소울 팝 장르입니다. 중독성 있는 후렴구와 심장을 두드리는 비트가 매력적인 곡이죠. 소속사를 피네이션으로 옮긴 후 처음 선보이는 곡이기도 합니다.
+            </p>
+          </li>
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_hwasa.jpg" alt="hwasa_img">
+            </div>
+            <p>화사(HWASA)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="artist_box">
+      <div class="card_jisoo">
+        <ul>
+          <li>
+            <img src="./img/card_summersalt.jpg" alt="card_img_07">
+          </li>
+          <li>
+            <p>
+              소금 감성 100%, 나만 알고 싶은 Summer Salt의 플레이리스트
+            </p>
+            <p>
+              트로피컬 팝 밴드 Summer Salt가 정규 앨범 [Campanita]를 발매했습니다.
+              이번 앨범은 가족, 친구, 연인, 모든 사랑에 대한 경쾌하고 행복한 기념비로, 12개의 트랙은 햇살과 장밋빛으로 물든 추억, 뿌리 깊은 관계와 상실로 굽이쳐 흐릅니다. 몽환적인 재즈에서부터 베드룸 팝, 해변의 보사노바, 사막의 밤 같은 인디 록까지. Summer Salt만의 다채로운 색깔의 팔레트로 완성했습니다.
+            <br>
+              지난 3월에는 Sumemr Salt의 첫 내한 공연이 있었는데요. 아직은 쌀쌀한 기운이 남아 있던 겨울날, Summer Salt의 완벽한 라이브 연주와 함께 공연장은 금세 따스한 하와이가 되었습니다.
+              몽글몽글한 분위기로 가득했던 현장과 아시아 투어의 비하인드를 멜론 리스너 분들께 단독 공개합니다!
+            </p>
+          </li>
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_summersalt.jpg" alt="summersalt_img">
+            </div>
+            <p>Summer Salt</p>
+          </li>
+        </ul>
+      </div>
+      <div class="card_riize">
+        <ul>
+          <li>
+            <img src="./img/card_riize.jpg" alt="card_img_08">
+          </li>
+          <li>
+            <p>
+              데뷔 D-7, 미리 만나보는 RIIZE 첫 싱글 [Get A Guitar]
+            </p>
+          </li>
+          <li>
+            <div class="artist_img">
+              <img src="./img/thumbnail_riize.jpg" alt="riize_img">
+            </div>
+            <p>RIIZE</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+</div>
+
+ <!--card-->
+
+<input type="radio" id="chk_center" name="footer">
+<input type="radio" id="chk_service" name="footer">
+<input type="radio" id="chk_info" name="footer">
+<input type="radio" id="chk_ask" name="footer">
+
+<footer class="footer">
+
+  <div class="footer_logo_box">
+
+    <div class="footer_logo">
+      <a href="#">
+        <img src="./img/bi/logo_opecity.png" alt="footer_logo_img">
+      </a>
+    </div>
+
+    <ul class="footer_sns">
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  
+  </div>
+
+  <div class="footer_menu_box">
+  
+    <div class="footer_center footer_menu">
+
+      <label for="chk_center">
+        <span>고객센터</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="notice_box">
+        <li>공지사항</li>
+        <li>이벤트</li>
+        <li>문의전화 1566-7727</li>
+        <li>평일 09:00-18:00, 유료</li>
+      </ul>
+
+    </div>
+
+    <div class="footer_service footer_menu">
+
+      <label for="chk_service">
+        <span>Melon서비스</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="service_box">
+        <li>멜론티켓</li>
+        <li>멜론스튜디오</li>
+        <li>멜론라운지</li>
+        <li>Window플레이어</li>
+        <li>Mac플레이어</li>
+        <li>Ipad</li>
+      </ul>
+
+    </div>
+  
+    <div class="footer_info footer_menu">
+
+      <label for="chk_info">
+        <span>기업정보</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="info_box">
+        <li>회사소개</li>
+        <li>인재채용</li>
+        <li>
+          (주)카카오엔터테인먼트
+        <br>
+          경기도 성남시 분당구 판교역로 221
+        <br>
+          대표이사 : 이진수, 김성수
+        <br>
+          사업자등록번호 : 220-88-02594
+        <br>
+          이메일 : melon_info@kakaoent.com
+          호스팅서비스사업자 : (주)카카오엔터테인먼트
+        <br>
+        <a href="#!">
+          이용약관 및 개인정보 처리 방침 상세내용확인 >
+        </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="footer_ask footer_menu">
+
+      <label for="chk_ask">
+        <span>문의</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="ask_box">
+      
+        <li>자주하는 질문</li>
+        <li>나의 문의내역</li>
+        <li>제휴/프로모션 문의</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="copy_right">
+    <p>©Kakao Entertainment Corp.</p>
+  </div>
+
+  <ul class="terms">
+    <li>
+      <a href="#!">
+        이용약관
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        위치기반서비스 이용약관
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        개인정보처리방침
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        청소년보호정책
+      </a>
+    </li>
+    <br class="br">
+    <li>
+      <a href="#!">
+        이메일주소 무단수집거부
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        파트너센터
+      </a>
+    </li>
+  </ul>
+
+</footer>
+
+<div class="play_bar_box">
+  <div class="play_bar">
+    <div class="play_img">
+      <img src="./img/contents/playing_bar_img_50x50.jpg" alt="play_bar_img">
+    </div>
+    <ul class="music">
+      <li><p class="album">사건의 지평선</p></li>
+      <li><p class="artist">윤하(YOUNHA)</p></li>
+    </ul>
+    <ul class="play_menu">
+      <li>
+        <img src="./img/icon/eq.png" alt="eq_img">
+      </li>
+      <li>
+        <img src="./img/icon/shuffle.png" alt="shuffle_img">
+      </li>
+      <li>
+        <img src="./img/icon/backward.png" alt="backward_img">
+      </li>
+      <li>
+        <img src="./img/icon/paly_30.png" alt="play_img">
+      </li>
+      <li>
+        <img src="./img/icon/forward.png" alt="forward_img">
+      </li>
+      <li>
+        <img src="./img/icon/repeat.png" alt="repeat_img">
+      </li>
+      <li>
+        <i class="fa-solid fa-volume-high"></i>
+      </li>
+      <li>
+        <img src="./img/icon/music_bar.png" alt="music_bar_img">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="aside">
+  <div class="top_btn">
+    <a href="#">
+      <img src="./img/bi/symbol_01.png" alt="top_btn_img">
+    </a>
+  </div>
+</div>
+
+
+</body>
+</html>

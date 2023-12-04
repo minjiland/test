@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>melon_subpage</title>
+  <!--main.css-->
+  <link rel="stylesheet" href="./css/main.css">
+  <!--google_font-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <!--font_awesome_cdnj gs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--jquery-->
+  <script src="./js/jquery-3.7.1.min.js"></script>
+   <!-- Swiper JS -->
+   
+</head>
+<body>
+
+  <input type="checkbox" id="chk_lnb">
+
+  <input type="radio" id="chk_chart" name="sub_menu" checked>
+  <input type="radio" id="chk_dj" name="sub_menu">
+  <input type="radio" id="chk_artist" name="sub_menu">
+  <input type="radio" id="chk_special" name="sub_menu">
+  <input type="radio" id="chk_my" name="sub_menu">
+
+  <input type="checkbox" id="chk_mode">
+<div class="header_box">
+
+  <header class="header">
+    <div class="logo">
+      <a href="../../index.html">
+        <span>  
+          <img src="./img/bi/logo_opecity.png" alt="logo_img">
+        </span>
+        <span>
+          <img src="./img/bi/logo.png" alt="logo_hover_img">
+        </span>
+      </a>
+    </div>
+ 
+    <nav class="header_menu_box">
+      <ul class="search_box">
+        <li class="search_menu">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+      </ul>
+      <label for="chk_lnb">
+        <li class="ham_menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </li>
+       </label>
+    </nav>
+
+    <nav class="lnb_box">
+      <div class="lnb_h">
+
+        <div class="lnb_symbol">
+          <a href="../../index.html">
+            <img src="./img/bi/symbol_01.png" alt="symbol_img">
+          </a>
+        </div>
+
+        <div class="lnb_login_box">
+
+          <div class="lnb_login">
+           <img src="./img/icon/lnb_user.png" alt="lnb_login_img">
+          </div>
+
+        <p>로그인</p>
+
+        </div>
+
+        <ul class="ticket_box">
+          <li class="ticket">
+            <img src="./img/icon/lnb_tikat.png" alt="lnb_이용권_background-color">
+            <p>이용권 구매</p>
+          </li> 
+        </ul>
+      </div>
+      <div class="lnb_b">
+        <label for="chk_chart">
+          <ul class="lnb_chart main">
+           <li class="lnb_chart_img">
+              <img src="./img/icon/lnb_icon_01.png" alt="melon_chart_img">
+            </li>
+            <li class="melon_chart p">멜론차트</li>
+        
+
+            <ul class="melon_chart_sub sub">
+              <li>TOP100</li>
+              <li>HOT100</li>
+              <li>일간</li>
+              <li>월간</li>
+              <li><a href="#"><green>시대</green></a></li>
+              <li>장르</li>
+            </ul>
+         </ul>
+       </label>
+
+        <label for="chk_dj">
+          <ul class="lnb_dj main">
+            <li class="lnb_dj_img">
+            <img src="./img/icon/lnb_icon_02.png" alt="melon_dj_img">
+            </li>
+            <li class="melon_dj p">멜론DJ</li>
+          
+            <ul class="melon_dj_sub sub">
+              <li>투데이</li>
+              <li>전문가 신곡</li>
+              <li>#테마장르</li>
+              <li>파워DJ</li>
+              <li>인기</li>
+            </ul>
+          </ul>
+        </label>
+
+        <label for="chk_artist">
+          <ul class="lnb_artist main">
+            <li class="lnb_artist_img">
+              <img src="./img/icon/lnb_icon_03.png" alt="artist_img">
+            </li>
+            <li class="melon_artist p">아티스트</li>
+
+            <ul class="artist_sub sub">
+              <li><a href="../artist/index.html"><green>NOW</green></a></li>
+              <li>아티스트 랭킹</li>
+              <li>마이 랭킹</li>
+            </ul>
+          </ul>
+        </label>
+
+        <label for="chk_special">
+          <ul class="lnb_special main">
+            <li class="lnb_special_img">
+              <img src="./img/icon/lnb_icon_04.png" alt="special_img">
+            </li>
+            <li class="melon_special p">스페셜</li>
+
+            <ul class="special_sub sub">
+              <li>멜론의 전당</li>
+              <li>매거진</li>
+              <li>MMA</li>
+              <li>주간인기상</li>
+              <li>어학</li>
+            </ul>
+          </ul>
+        </label>
+
+          <ul class="lnb_music_wv_box main">
+            <li class="lnb_music_wv_img">
+              <img src="./img/icon/lnb_icon_05.png" alt="music_wave_img">
+            </li>
+            <li class="melon_music_wv p">
+              <a href="#!">뮤직웨이브</a>
+            </li>
+          </ul>
+
+        <label for="chk_my">
+          <ul class="lnb_my_music main">
+            <li class="lnb_my_music_img">
+              <img src="./img/icon/lnb_icon_06.png" alt="my_music_img">
+            </li>
+            <li class="melon_my_music p">마이뮤직</li>
+
+            <ul class="my_music_sub sub">
+              <li>좋아요</li>
+              <li>플레이리스트</li>
+              <li>최근 들은</li>
+              <li>많이 들은</li>
+              <li>팬 맺은 아티스트</li>
+              <li>뮤직 DNA</li>
+              <li>다운로드한</li>
+            </ul>
+          </ul>
+        </label>
+      </div>
+
+      <ul class="dark_mode_box">
+        <li class="dark_mode">
+            <span><p>다크모드</p></span>
+            <span><p>화이트모드</p></span>
+        </li>
+        <li class="switch">
+          <label for="chk_mode">
+            <span class="switch_on"></span>
+          </label>
+        </li>
+      </ul>
+ 
+      
+    </nav>
+  </header>
+</div>
+
+<div class="wrap">
+  <p class="title">시대별차트</p>
+
+  <ul class="period_btn_box">
+    <li>
+      <select name="korea" id="korea">
+        <option value="korea">국내</option>
+        <option value="foreign">해외</option>
+      </select>
+    </li>
+    <li>
+      <select name="years" id="years">
+        <option>1960년대</option>
+        <option>1970년대</option>
+        <option>1980년대</option>
+        <option>1990년대</option>
+        <option>2000년대</option>
+        <option>2010년대</option>
+      </select>
+    </li>
+    <li>
+      <select name="year" id="year">
+        <option>1961년</option>
+        <option>1962년</option>
+        <option>1963년</option>
+        <option>1964년</option>
+        <option>1965년</option>
+        <option>1966년</option>
+        <option>1967년</option>
+        <option>1968년</option>
+        <option>1969년</option>
+      </select>
+    </li>
+  </ul>
+
+  <!--btn_box-->
+
+  <div class="period_banner">
+    <picture>
+      <source media="(min-width: 601px)" srcset="./img/period_1960_banner.jpg">
+      <source media="(min-width: 300px)" srcset="./img/period_1960_banner_mobile.jpg">
+      <img src="./img/period_1960_banner.jpg" alt="period_banner">
+    </picture>
+  </div>
+
+  <p class="title">주요 아티스트</p>
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper artist_box">
+  <div class="swiper-wrapper artist">
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_01.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_01_mobile.jpg">
+          <img src="./img/artist_01.jpg" alt="artist_01_img">
+        </picture>
+      </li>
+      <li>신중현</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_02.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_02_mobile.jpg">
+          <img src="./img/artist_02.jpg" alt="artist_02_img">
+      </picture>
+    </li>
+    <li>키보이스</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_03.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_03_mobile.jpg">
+          <img src="./img/artist_03.jpg" alt="artist_03_img">
+        </picture>
+      </li>
+      <li>조동진</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_04.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_04_mobile.jpg">
+          <img src="./img/artist_04.jpg" alt="artist_04_img">
+        </picture>
+      </li>
+      <li>최희준</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_05.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_05_mobile.jpg">
+          <img src="./img/artist_05.jpg" alt="artist_05_img">
+        </picture>
+      </li>
+      <li>김상희</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_06.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_06_mobile.jpg">
+          <img src="./img/artist_06.jpg" alt="artist_06_img">
+       </picture>
+      </li>
+      <li>이미자</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_07.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_07_mobile.jpg">
+          <img src="./img/artist_07.jpg" alt="artist_07_img">
+        </picture>
+      </li>
+      <li>윤복희</li>
+    </div>
+    <div class="swiper-slide">
+      <li></li>
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_08.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_08_mobile.jpg">
+          <img src="./img/artist_08.jpg" alt="artist_08_img">
+        </picture>
+      </li>
+      <li>한명숙</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_09.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_09_mobile.jpg">
+          <img src="./img/artist_09.jpg" alt="artist_09_img">
+        </picture>
+      </li>
+      <li>쟈니브라더스</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_10.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_10_mobile.jpg">
+          <img src="./img/artist_10.jpg" alt="artist_10_img">
+        </picture>
+      </li>
+      <li>이금희</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_11.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_11_mobile.jpg">
+          <img src="./img/artist_11.jpg" alt="artist_11_img">
+        </picture>
+      </li>
+      <li>차중락</li>
+    </div>
+    <div class="swiper-slide">
+      <li>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/artist_12.jpg">
+          <source meida="(min-width: 300px)" srcset="./img/artist_12_mobile.jpg">
+          <img src="./img/artist_12.jpg" alt="artist_12_img">
+        </picture>
+      </li>
+      <li>배호</li>
+    </div>
+  </div>
+</div>
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     watchSlidesProgress: true,
+     width:100,
+     rewind: true,
+     breakpoints: {
+       601: {
+         width: 220,
+       }
+     }
+   });
+ </script>
+
+  <input type="checkbox" id="chk_rnr">
+  <input type="checkbox" id="chk_keyvoice">
+  <input type="checkbox" id="chk_hak">
+ 
+<p class="title">한국형 로큰롤의 시작</p>
+
+<div class="hot_artist_box">
+
+<ul class="rnr_box">
+  <div class="rnr">
+  <li>  
+    <img src="./img/sc01_rockandroll_01.jpg" alt="rnr_img_01">
+  </li>
+  <li>
+    <img src="./img/sc01_rockandroll_02.jpg" alt="rnr_img_02">
+  </li>
+  <li>
+    <p class="fff margin">
+      한국 Rock 'N' Roll 꽃 피운 신중현!!
+    <br>
+      한국 최초의 록 밴드 'Add 4'
+    </p>
+    <label for="chk_rnr">
+      <p class="more">
+        <span>
+        더보기▼
+        </span>
+        <span>
+        접기▲
+        </span>
+      </p>
+    </label>
+    <p class="p">
+      1960년대 음악을 특징별로 살펴보면 먼저 미8군 무대에서 활동한 가수들의 대거 등장입니다.
+    <br>
+      록의 전설로 불리우는 신중현의 Add 4'가 '빗속의 여인'으로 한국 록 음악의 시대를 열어주었습니다.
+    </p>
+    <p class="fff margin">대표곡 들어보기</p>
+  </li>
+  <li class="img">
+    <picture>
+      <source media="(min-width: 601px)" srcset="./img/sc01_rockandroll_song_01.jpg">
+      <source media="(min-width: 300px)" srcset="./img/sc01_rockandroll_song_01_mobile.jpg">
+      <img src="./img/sc01_rockandroll_song_01.jpg" alt="rnr_song_img">
+    </picture>
+
+    <p>앤솔로지 파트1 (Anthology Part 1)</p>
+    <p class="fff">빗속의 여인(1964년작)</p>
+    <p>add 4</p>
+    <div class="play_btn_01">
+      <img src="./img/icon/paly_30.png" alt="play_btn_img">
+    </div>
+  </li>
+  </div>
+</ul>
+
+<p class="title">60년대 대표 국민밴드 '키보이스'</p>
+
+<ul class="keyvoice_box">
+  <div class="keyvoice">
+    <li>  
+      <img src="./img/sc02_keyvoice_01.jpg" alt="rnr_img_01">
+    </li>
+    <li>
+      <img src="./img/sc02_keyvoice_02.jpg" alt="rnr_img_02">
+    </li>
+    <li>
+      <p class="fff margin">
+        그룹사운드로 출발한 키보이스가 '해변으로 가요'로 큰 
+      <br>
+        인기를 얻었습니다.
+      </p>
+      <label for="chk_keyvoice">
+        <p class="more">
+          <span>
+          더보기▼
+          </span>
+          <span>
+          접기▲
+          </span>
+        </p>
+      </label>
+      <p class="p">
+        키보이스의 멤버인 윤항기, 차중락, 차도균은 이후 솔로로 독립, 주옥같은 히트곡들을 발표하였습니다.
+      <br>
+        록그룹으로 출발한 쉐그린은 이후 포크 듀오로 변신, '동물농장' 등의 음악으로 즐거움을 선사하기도 하였습니다.
+      <br>
+        지금은 언더그라운드 음악의 대부로 알려진 가수 조동진도 이때 록그룹으로 시작했다는 사실은 그리 많이 알려지지 않은 이야기입니다.
+      <br>
+        아마도 후에 발표된 그만의 감성적 노래들 '행복한 사람', '제비꽃' 등의 서정성 때문일 것입니다.
+      </p>
+      <p class="fff margin">대표곡 들어보기</p>
+    </li>
+    <li class="img">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/sc02_keyvoice_song_01.jpg">
+        <source media="(min-width: 300px)" srcset="./img/sc02_keyvoice_song_01_mobile.jpg">
+        <img src="./img/sc02_keyvoice_song_01.jpg" alt="keyvoice_song_img">
+      </picture>
+
+      <p>Gold</p>
+      <p class="fff">해변으로 가요</p>
+      <p>키보이스</p>
+      <div class="play_btn_03">
+        <img src="./img/icon/paly_30.png" alt="play_btn_img">
+      </div>
+    </li>
+    <li class="img">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/sc02_keyvoice_song_02.jpg">
+        <source media="(min-width: 300px)" srcset="./img/sc02_keyvoice_song_02_mobile.jpg">
+        <img src="./img/sc02_keyvoice_song_02.jpg" alt="keyvoice_song_img">
+      </picture>
+
+      <p>조동진 Vol. 1</p>
+      <p class="fff">행복한 사람</p>
+      <p>조동진</p>
+      <div class="play_btn_02">
+        <img src="./img/icon/paly_30.png" alt="play_btn_img">
+      </div>
+    </li>
+    <li class="img">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/sc02_keyvoice_song_03.jpg">
+        <source media="(min-width: 300px)" srcset="./img/sc02_keyvoice_song_03_mobile.jpg">
+        <img src="./img/sc02_keyvoice_song_03.jpg" alt="keyvoice_song_img">
+      </picture>
+
+      <p>조동진 Vol. 3</p>
+      <p class="fff">제비꽃</p>
+      <p>조동진</p>
+      <div class="play_btn_01">
+        <img src="./img/icon/paly_30.png" alt="play_btn_img">
+      </div>
+    </li>
+  </div>
+</ul>
+
+<p class="title">주목받은 학사 출신 가수들</p>
+
+<ul class="hak_box">
+  <div class="hak">
+  <li>
+    <img src="./img/sc03_hak_01.jpg" alt="hak_01_img">
+  </li>
+  <li>
+    <img src="./img/sc03_hak_02.jpg" alt="hak_02_img">
+  </li>
+  <li>
+    <p class="fff margin">
+      이 당시 가요계의 화제를 모았던 일은, 지금은 흔한 
+    <br>
+      일이지만 학사 출신 가수들의 출현이었습니다. 
+    </p>
+    <label for="chk_hak">
+      <p class="more">
+        <span>
+        더보기▼
+        </span>
+        <span>
+        접기▲
+        </span>
+      </p>
+    </label>
+    <p class="p">
+      대표적인 가수로는 서울법대와 15대 국회의원을 지낸 최희준으로 '우리 애인은 올드미스', '하숙생' 등으로 인기 정상을 지켰습니다.
+      고대법대의 김상희 또한 '대머리 총각', '코스모스 피어 있는 길' 등으로 60년대를 대표하는 가수로 기억되고 있습니다. 그런가 하면 서울대 성악과의 최양숙은
+      '황혼의 엘레지'를 발표하며 그 시절 유일하게 샹송을 부른 가수로 유명합니다. 또한, 서울공대의 유주용은 소월의 시 '부모' 등을 불렀으며
+      가수 윤복희와의 결혼 등 그 시절 학사 가수들은 인기와 사랑을 한몸에 받을 수 있었습니다.
+    </p>
+    <p class="fff margin">
+      대표곡 들어보기
+    </p>
+  </li>
+  <li class="img">
+    <picture>
+      <source media="(min-width: 601px)" srcset="./img/sc03_hak_song_01.jpg">
+      <source media="(min-width: 300px)" srcset="./img/sc03_hak_song_01_mobile.jpg">
+      <img src="./img/sc03_hak_song_01.jpg" alt="hak_song_01_img">
+    </picture>
+
+
+    <p>최희준 스타앨범 힛트 21</p>
+    <p class="fff">우리애인은 올드미스</p>
+    <p>최희준</p>
+    <div class="play_btn_04">
+      <img src="./img/icon/paly_30.png" alt="play_btn_img">
+    </div>
+  </li>
+  <li class="img">
+    <picture>
+      <source media="(min-width: 601px)" srcset="./img/sc03_hak_song_02.jpg">
+      <source media="(min-width: 300px)" srcset="./img/sc03_hak_song_02_mobile.jpg">
+      <img src="./img/sc03_hak_song_02.jpg" alt="hak_song_02_img">
+    </picture>
+
+
+    <p>골든 히트 앨범 6</p>
+    <p class="fff">하숙생</p>
+    <p>최희준</p>
+    <div class="play_btn_03">
+      <img src="./img/icon/paly_30.png" alt="play_btn_img">
+    </div>
+  </li>
+  <li class="img">
+    <picture>
+      <source media="(min-width: 601px)" srcset="./img/sc03_hak_song_03.jpg">
+      <source media="(min-width: 300px)" srcset="./img/sc03_hak_song_03_mobile.jpg">
+      <img src="./img/sc03_hak_song_03.jpg" alt="hak_song_03_img">
+  </picture>
+
+    <p>당신을 알고부터, 참사랑</p>
+    <p class="fff">대머리 총각</p>
+    <p>김상희</p>
+    <div class="play_btn_02">
+      <img src="./img/icon/paly_30.png" alt="play_btn_img">
+    </div>
+  </li>
+  <li class="img">
+    <picture>
+      <source media="(min-width: 601px)" srcset="./img/sc03_hak_song_04.jpg">
+      <source media="(min-width: 300px)" srcset="./img/sc03_hak_song_04_mobile.jpg">
+    <img src="./img/sc03_hak_song_04.jpg" alt="hak_song_04_img">
+    </picture>
+
+    <p>가요 박물관</p>
+    <p class="fff">부모</p>
+    <p>유주용</p>
+    <div class="play_btn_01">
+      <img src="./img/icon/paly_30.png" alt="play_btn_img">
+    </div>
+  </li>
+</div>
+</ul> 
+
+</div>
+
+<p class="title">1960년 인기차트</p>
+
+<div class="famous_box">
+  <ul>
+    <li class="menu">
+      <span>순위</span>
+      <span>곡정보</span>
+      <span>재생</span>
+      <span class="pc">리스트추가</span>
+      <span class="pc">다운</span>
+      <span class="pc">뮤비</span>
+    </li>
+    <li class="chart">
+      <span class="green number">1</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_01.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_01_mobile.jpg">
+          <img src="./img/period_1960_chart_01.jpg" alt="period_1960_chart_01_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">마지막키스/그림자</p>
+        <p class="fff">가을이 오기전에</p>
+        <p>이영숙</p>
+      </span>
+      
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+    
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+    
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+    </li>
+
+    <li class="chart">
+      <span class="green number">2</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_02.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_02_mobile.jpg">
+          <img src="./img/period_1960_chart_02.jpg" alt="period_1960_chart_02_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">나훈아 베스트 2</p>
+        <p class="fff">강촌에 살고싶네</p>
+        <p>나훈아</p>
+      </span>
+
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+       
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+
+    </li>
+
+    <li class="chart">
+
+      <span class="green number">3</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_03.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_03_mobile.jpg">
+          <img src="./img/period_1960_chart_03.jpg" alt="period_1960_chart_01_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">마지막키스/그림자</p>
+        <p class="fff">그림자</p>
+        <p>이영숙</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+
+    </li>
+
+    <li class="chart">
+      <span class="white">4</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_04.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_04_mobile.jpg">
+          <img src="./img/period_1960_chart_04.jpg" alt="period_1960_chart_01_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">골드 (바닷가의 추억)</p>
+        <p class="fff">그 사람</p>
+        <p>키보이스</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+    </li>
+
+    <li class="chart">
+      <span class="white">5</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_05.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_05_mobile.jpg">
+          <img src="./img/period_1960_chart_05.jpg" alt="period_1960_chart_05_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">2004 김하정의 모든것</p>
+        <p class="fff">금산아가씨</p>
+        <p>김하정</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+    </li>
+
+    <li class="chart">
+      <span class="white">6</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_06.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_06_mobile.jpg">
+          <img src="./img/period_1960_chart_06.jpg" alt="period_1960_chart_06_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">나훈아 베스트 1</p>
+        <p class="fff">긴 세월</p>
+        <p>나훈아</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+      
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+    </li>
+
+    <li class="chart">
+      <span class="white">7</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_07.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_07_mobile.jpg">
+          <img src="./img/period_1960_chart_07.jpg" alt="period_1960_chart_07_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">김세레나 노래선물 </p>
+        <p class="fff">꽃타령</p>
+        <p>김세레나</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+  
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+   
+    </li>
+
+    <li class="chart">
+      <span class="white">8</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_08.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_08_mobile.jpg">
+          <img src="./img/period_1960_chart_08.jpg" alt="period_1960_chart_08_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">트롯트 세상 1</p>
+        <p class="fff">님 그리워</p>
+        <p>나훈아</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+ 
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+
+    </li>
+    
+    <li class="chart">
+      <span class="white">9</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_09.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_09_mobile.jpg">
+          <img src="./img/period_1960_chart_09.jpg" alt="period_1960_chart_09_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">마지막키스/그림자</p>
+        <p class="fff">님아</p>
+        <p>이영숙</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">\
+      </div>
+  
+    </li>
+    <li class="chart">
+      <span class="white">10</span>
+      <span>
+        <picture>
+          <source media="(min-width: 601px)" srcset="./img/period_1960_chart_10.jpg">
+          <source media="(min-width: 300px)" srcset="./img/period_1960_chart_10_mobile.jpg">
+          <img src="./img/period_1960_chart_10.jpg" alt="period_1960_chart_10_img">
+        </picture>
+      </span>
+      <span>
+        <p class="size">배호 애창곡</p>
+        <p class="fff">당신</p>
+        <p>신행일</p>
+      </span>
+      <div class="music_bar">
+        <img src="./img/icon/paly_30.png" alt="play_img">
+        <img src="./img/icon/paly_30_green.png" alt="play_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/plus.png" alt="plus_img">
+        <img src="./img/icon/plus_green.png" alt="plus_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/download.png" alt="download_img">
+        <img src="./img/icon/download_green.png" alt="download_hover_img">
+      </div>
+
+      <div class="pc music_bar">
+        <img src="./img/icon/video.png" alt="video_img">
+        <img src="./img/icon/video_green.png" alt="video_hover_img">
+      </div>
+    </li>
+  </ul>
+
+
+</div>
+
+<p class="title">1960년대 명곡은?</p>
+
+<section class="comment">
+  <div class="write_box">
+    <span>
+      <i class="fa-regular fa-comment"></i>
+    </span>
+    <span>
+      <p>여러분의 의견을 자유롭게 들려주세요.</p>
+    </span>
+    <span>
+      <p class="fff">의견쓰기</p>
+    </span>
+  </div>
+
+  <ul>
+    <li>
+        <p class="fff name">닉네임</p>
+        <span>
+          <i class="fa-solid fa-heart"></i>
+          <p class="fff number">10</p>
+      </span>
+    </li>
+
+    <li class="date">
+      <p>2023-10-10</p>
+    </li>
+
+    <li>
+      <p class="fff">빗속의 여인 제일 좋아하는 곡이예요!</p>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+        <p class="fff name">우리집불났다</p>
+        <span>
+          <i class="fa-solid fa-heart"></i>
+          <p class="fff number">3</p>
+      </span>
+    </li>
+
+    <li class="date">
+      <p>2023-10-10</p>
+    </li>
+
+    <li>
+      <p class="fff">장덕 누나 노래도 올려주세요!! 
+      <br>
+      님 떠난 후, 소녀와 가로등 부탁드립니다.
+      </p>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+        <p class="fff name">닉네임</p>
+        <span>
+          <i class="fa-solid fa-heart"></i>
+          <p class="fff number">12</p>
+      </span>
+    </li>
+
+    <li class="date">
+      <p>2023-10-10</p>
+    </li>
+
+    <li>
+      <p class="fff">박혜성노래~
+      <br>
+      박혜성은 들을 수가 없네여~ 넘 듣고 싶은데... 꼭 올라왔으면 좋겠습니다~^0^
+      </p>
+    </li>
+  </ul>
+
+</section>
+
+</div>
+
+<input type="radio" id="chk_center" name="footer">
+<input type="radio" id="chk_service" name="footer">
+<input type="radio" id="chk_info" name="footer">
+<input type="radio" id="chk_ask" name="footer">
+
+<footer class="footer">
+
+  <div class="footer_logo_box">
+
+    <div class="footer_logo">
+      <a href="#">
+        <img src="./img/bi/logo_opecity.png" alt="footer_logo_img">
+      </a>
+    </div>
+
+    <ul class="footer_sns">
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  
+  </div>
+
+  <div class="footer_menu_box">
+  
+    <div class="footer_center footer_menu">
+
+      <label for="chk_center">
+        <span>고객센터</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="notice_box">
+        <li>공지사항</li>
+        <li>이벤트</li>
+        <li>문의전화 1566-7727</li>
+        <li>평일 09:00-18:00, 유료</li>
+      </ul>
+
+    </div>
+
+    <div class="footer_service footer_menu">
+
+      <label for="chk_service">
+        <span>Melon서비스</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="service_box">
+        <li>멜론티켓</li>
+        <li>멜론스튜디오</li>
+        <li>멜론라운지</li>
+        <li>Window플레이어</li>
+        <li>Mac플레이어</li>
+        <li>Ipad</li>
+      </ul>
+
+    </div>
+  
+    <div class="footer_info footer_menu">
+
+      <label for="chk_info">
+        <span>기업정보</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="info_box">
+        <li>회사소개</li>
+        <li>인재채용</li>
+        <li>
+          (주)카카오엔터테인먼트
+        <br>
+          경기도 성남시 분당구 판교역로 221
+        <br>
+          대표이사 : 이진수, 김성수
+        <br>
+          사업자등록번호 : 220-88-02594
+        <br>
+          이메일 : melon_info@kakaoent.com
+          호스팅서비스사업자 : (주)카카오엔터테인먼트
+        <br>
+        <a href="#!">
+          이용약관 및 개인정보 처리 방침 상세내용확인 >
+        </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="footer_ask footer_menu">
+
+      <label for="chk_ask">
+        <span>문의</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="ask_box">
+      
+        <li>자주하는 질문</li>
+        <li>나의 문의내역</li>
+        <li>제휴/프로모션 문의</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="copy_right">
+    <p>©Kakao Entertainment Corp.</p>
+  </div>
+
+  <ul class="terms">
+    <li>
+      <a href="#!">
+        이용약관
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        위치기반서비스 이용약관
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        개인정보처리방침
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        청소년보호정책
+      </a>
+    </li>
+    <br class="br">
+    <li>
+      <a href="#!">
+        이메일주소 무단수집거부
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        파트너센터
+      </a>
+    </li>
+  </ul>
+
+</footer>
+<div class="play_bar_box">
+  <div class="play_bar">
+    <div class="play_img">
+      <img src="./img/contents/playing_bar_img_50x50.jpg" alt="play_bar_img">
+    </div>
+    <ul class="music">
+      <li><p class="album">사건의 지평선</p></li>
+      <li><p class="artist">윤하(YOUNHA)</p></li>
+    </ul>
+    <ul class="play_menu">
+      <li>
+        <img src="./img/icon/eq.png" alt="eq_img">
+      </li>
+      <li>
+        <img src="./img/icon/shuffle.png" alt="shuffle_img">
+      </li>
+      <li>
+        <img src="./img/icon/backward.png" alt="backward_img">
+      </li>
+      <li>
+        <img src="./img/icon/paly_30.png" alt="play_img">
+      </li>
+      <li>
+        <img src="./img/icon/forward.png" alt="forward_img">
+      </li>
+      <li>
+        <img src="./img/icon/repeat.png" alt="repeat_img">
+      </li>
+      <li>
+        <i class="fa-solid fa-volume-high"></i>
+      </li>
+      <li>
+        <img src="./img/icon/music_bar.png" alt="music_bar_img">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="aside">
+  <div class="top_btn">
+    <a href="#">
+      <img src="./img/bi/symbol_01.png" alt="top_btn_img">
+    </a>
+  </div>
+</div>
+
+  
+</body>
+</html>

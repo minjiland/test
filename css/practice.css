@@ -1,0 +1,101 @@
+li {list-style: none;}
+body {background-color: black;}
+.top100 .text .top100_title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.top100 .text .ranking {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  float: left;
+  margin-right: 10px;
+
+}
+
+.top100 .text .top100_artist {
+  font-size: 16px;
+  overflow: hidden;
+  padding-left: 3px;
+
+}
+
+
+/*-----top100_text-----*/
+
+.top100_box {
+  width: 100%; height: 580px;
+  overflow-y: hidden;
+  position: relative;
+  /* -ms-overflow-style: none; */
+  /* scrollbar-width: none; */
+  /* scroll-behavior: smooth; */
+}
+
+/* .top100_box::-webkit-scrollbar {
+  display: none;
+} */
+
+.top100 {
+  width: 500%;
+  display: flex;
+
+}
+
+.top100 div {
+  width: 50%;
+
+}
+
+.top100 div .top {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  margin-bottom: 20px;
+
+
+}
+.top div .top:last-child {margin-bottom: 0;
+}
+
+.top100 div ul .img {
+  width: 100px; height: 100px;
+  margin-right: 20px;
+
+}
+
+.top100 .top .img img {
+  border-radius: 5px;
+}
+
+.top100 .top .text {
+  width: 40%; height: 60px;
+  margin-top: 20px;
+  float: left;
+
+}
+
+.top100 .top .text p:nth-child(3) {
+  color: #979797;
+}
+
+
+.top100 .top .btn_box {
+  width: 5%;
+  position: absolute;
+  right: 50px; top: 50px;
+}
+
+.top100 .btn_box .play_btn span:last-child {display: none;}
+.top100 .btn_box .plus_btn {display: none;}
+.top100 .btn_box .download_btn {display: none;}
+.top100 .btn_box .video_btn {display: none;}
+
+.top100 .text p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+

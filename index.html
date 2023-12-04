@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>melon</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--google_font-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <!--cdn-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--swiper-->
+  <!--js-->
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <!--slick-->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!--jquery-->
+
+  <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+
+  <input type="checkbox" id="chk_lnb">
+
+  <input type="radio" id="chk_chart" name="sub_menu" checked>
+  <input type="radio" id="chk_dj" name="sub_menu">
+  <input type="radio" id="chk_artist" name="sub_menu">
+  <input type="radio" id="chk_special" name="sub_menu">
+  <input type="radio" id="chk_my" name="sub_menu">
+
+  <input type="checkbox" id="chk_mode">
+  
+<div class="header_box">
+
+  <header class="header">
+    <div class="logo">
+      <a href="#">
+        <span>  
+          <img src="./img/bi/logo_opecity.png" alt="logo_img">
+        </span>
+        <span>
+          <img src="./img/bi/logo.png" alt="logo_hover_img">
+        </span>
+      </a>
+    </div>
+ 
+    <nav class="header_menu_box">
+      <ul class="search_box">
+        <li class="search_menu">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+      </ul>
+      <label for="chk_lnb">
+        <li class="ham_menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </li>
+       </label>
+    </nav>
+
+    <nav class="lnb_box">
+      <div class="lnb_h">
+          <div class="lnb_symbol">
+            <a href="#">
+              <img src="./img/bi/symbol_01.png" alt="symbol_img">
+            </a>
+        </div>
+
+        <div class="lnb_login_box">
+
+          <div class="lnb_login">
+            <img src="./img/icon/lnb_user.png" alt="lnb_login_img">
+          </div>
+
+        <p>로그인</p>
+
+        </div>
+
+        <ul class="ticket_box">
+          <li class="ticket">
+            <a href="#!">
+            <img src="./img/icon/lnb_tikat.png" alt="lnb_이용권_background-color">
+            <p>이용권 구매</p>
+            </a>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="lnb_b">
+        <label for="chk_chart">
+          <ul class="lnb_chart main">
+           <li class="lnb_chart_img">
+              <img src="./img/icon/lnb_icon_01.png" alt="melon_chart_img">
+            </li>
+            <li class="melon_chart p">멜론차트</li>
+        
+
+            <ul class="melon_chart_sub sub">
+              <li>TOP100</li>
+              <li>HOT100</li>
+              <li>일간</li>
+              <li>월간</li>
+              <li><a href="./subpage/period/index.html"><green>시대</green></a></li>
+              <li>장르</li>
+            </ul>
+         </ul>
+       </label>
+
+        <label for="chk_dj">
+          <ul class="lnb_dj main">
+            <li class="lnb_dj_img">
+            <img src="./img/icon/lnb_icon_02.png" alt="melon_dj_img">
+            </li>
+            <li class="melon_dj_menu p">멜론DJ</li>
+          
+            <ul class="melon_dj_sub sub">
+              <li>투데이</li>
+              <li>전문가 신곡</li>
+              <li>#테마장르</li>
+              <li>파워DJ</li>
+              <li>인기</li>
+            </ul>
+          </ul>
+        </label>
+
+        <label for="chk_artist">
+          <ul class="lnb_artist main">
+            <li class="lnb_artist_img">
+              <img src="./img/icon/lnb_icon_03.png" alt="artist_img">
+            </li>
+            <li class="melon_artist p">아티스트</li>
+
+            <ul class="artist_sub sub">
+              <li><a href="./subpage/artist/index.html"><green>NOW</green></a></li>
+              <li>아티스트 랭킹</li>
+              <li>마이 랭킹</li>
+            </ul>
+          </ul>
+        </label>
+
+        <label for="chk_special">
+          <ul class="lnb_special main">
+            <li class="lnb_special_img">
+              <img src="./img/icon/lnb_icon_04.png" alt="special_img">
+            </li>
+            <li class="melon_special p">스페셜</li>
+
+            <ul class="special_sub sub">
+              <li>멜론의 전당</li>
+              <li>매거진</li>
+              <li>MMA</li>
+              <li>주간인기상</li>
+              <li>어학</li>
+            </ul>
+          </ul>
+        </label>
+
+          <ul class="lnb_music_wv_box main">
+            <li class="lnb_music_wv_img">
+              <img src="./img/icon/lnb_icon_05.png" alt="music_wave_img">
+            </li>
+            <li class="melon_music_wv p">
+              <a href="#!">뮤직웨이브</a>
+            </li>
+          </ul>
+
+        <label for="chk_my">
+          <ul class="lnb_my_music main">
+            <li class="lnb_my_music_img">
+              <img src="./img/icon/lnb_icon_06.png" alt="my_music_img">
+            </li>
+            <li class="melon_my_music p">마이뮤직</li>
+
+            <ul class="my_music_sub sub">
+              <li>좋아요</li>
+              <li>플레이리스트</li>
+              <li>최근 들은</li>
+              <li>많이 들은</li>
+              <li>팬 맺은 아티스트</li>
+              <li>뮤직 DNA</li>
+              <li>다운로드한</li>
+            </ul>
+          </ul>
+        </label>
+      </div>
+
+      <div class="dark_mode_box">
+        <li class="dark_mode">
+            <span><p>다크모드</p></span>
+            <span><p>화이트모드</p></span>
+        </li>
+        <li class="switch">
+          <label for="chk_mode">
+            <span class="switch_on"></span>
+          </label>
+        </li>
+      </div>
+ 
+      
+    </nav>
+  </header>
+</div>
+
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper visual_main_box">
+  <div class="swiper-wrapper visual_main">
+    <div class="swiper-slide">
+      <a href="#!">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/contents/visual_main_01.jpg">
+        <source media="(min-width: 300px)" srcset="./img/contents/visual_main_mobile_01.jpg">
+        <img src="./img/contents/visual_main_01.jpg" alt="visual_main_01_img">
+      </picture>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#!">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/contents/visual_main_02.jpg">
+        <source media="(min-width: 300px)" srcset="./img/contents/visual_main_mobile_02.jpg">
+        <img src="./img/contents/visual_main_02.jpg" alt="visual_main_02_img">
+      </picture>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#!">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/contents/visual_main_03.jpg">
+        <source media="(min-width: 300px)" srcset="./img/contents/visual_main_mobile_03.jpg">
+        <img src="./img/contents/visual_main_03.jpg" alt="visual_main_03_img">
+      </picture>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#!">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/contents/visual_main_04.jpg">
+        <source media="(min-width: 300px)" srcset="./img/contents/visual_main_mobile_04.jpg">
+        <img src="./img/contents/visual_main_04.jpg" alt="visual_main_04_img">
+      </picture>
+      </a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#!">
+      <picture>
+        <source media="(min-width: 601px)" srcset="./img/contents/visual_main_05.jpg">
+        <source media="(min-width: 300px)" srcset="./img/contents/visual_main_mobile_05.jpg">
+        <img src="./img/contents/visual_main_05.jpg" alt="visual_main_05_img">
+      </picture>
+      </a>
+    </div>
+  </div>
+
+  <div class="swiper-button-next" style="color: #21df3a;"></div>
+  <div class="swiper-button-prev" style="color: #21df3a;"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+
+<p class="title_01 title">
+  <a href="#!">오늘의 TOP 100 ></a>
+</p>
+
+<div class="wrap_box">
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper top100_box">
+    <div class="swiper-wrapper top100">
+      <div class="swiper-slide top05">
+        <ul class="top100_01 top">
+          <li class="top100_01_img img">
+            <img src="./img/contents/top100_01.jpg" alt="top100_img_01">
+          </li>
+          <li class="top100_01_text text">
+            <p class="ranking">1</p> 
+            <p class="top100_title">Love Lee</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;AKMU(악뮤)</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+        
+      
+        <ul class="top100_02 top">
+          <li class="top100_02_img img">
+            <img src="./img/contents/top100_02.jpg" alt="top100_img_02">
+          </li>
+          <li class="top100_02_text text">
+            <p class="ranking">2</p> 
+            <p class="top100_title">후라이의 꿈</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;AKMU(악뮤)</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+      
+        <ul class="top100_03 top">
+          <li class="top100_03_img img">
+            <img src="./img/contents/top100_03.jpg" alt="top100_img_03">
+          </li>
+          <li class="top100_03_text text">
+            <p class="ranking">3</p> 
+            <p class="top100_title">You&Me</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;제니(JENNE)</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+      
+        <ul class="top100_04 top">
+          <li class="top100_04_img img">
+            <img src="./img/contents/top100_04.jpg" alt="top100_img_04">
+          </li>
+          <li class="top100_04_text text">
+            <p class="ranking">4</p> 
+            <p class="top100_title">Seven (feat. Latto) - Clean Ver.</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;정국</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+      
+        <ul class="top100_05 top">
+          <li class="top100_05_img img">
+            <img src="./img/contents/top100_05.jpg" alt="top100_img_05">
+          </li>
+          <li class="top100_05_text text">
+            <p class="ranking">5</p> 
+            <p class="top100_title">Either Way</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;IVE(아이브)</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="swiper-slide top10">
+        <ul class="top100_06 top">
+          <li class="top100_06_img img">
+            <img src="./img/contents/top100_06.jpg" alt="top100_img_06">
+          </li>
+          <li class="top100_06_text text">
+            <p class="ranking">6</p> 
+            <p class="top100_title">다이나믹 듀오, 이영지</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;Smoke (Prod. Dynamicduo, Padi)</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+       </ul>
+        
+        <ul class="top100_07 top">
+          <li class="top100_07_img img">
+            <img src="./img/contents/top100_07.jpg" alt="top100_img_07">
+          </li>
+          <li class="top100_07_text text">
+            <p class="ranking">7</p>
+            <p class="top100_title">New Jeans</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;ETA</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+               </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+        
+        <ul class="top100_08 top">
+          <li class="top100_08_img img">
+            <img src="./img/contents/top100_08.jpg" alt="top100_img_08">
+          </li>
+          <li class="top100_08_text text">
+             <p class="ranking">8</p> 
+            <p class="top100_title">Fast Forward</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;전소미</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+                <span>
+                  <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+                </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+        
+        <ul class="top100_09 top">
+          <li class="top100_09_img img">
+            <img src="./img/contents/top100_09.jpg" alt="top100_img_09">
+           </li>
+          <li class="top100_09_text text">
+            <p class="ranking">9</p> 
+            <p class="top100_title">Super Shy</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;New Jeans</p>
+          </li>
+          <div class="btn_box">
+             <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+               </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+            </div>
+        </ul>
+        
+        <ul class="top100_10 top">
+          <li class="top100_10_img img">
+            <img src="./img/contents/top100_10.jpg" alt="top100_img_10">
+          </li>
+          <li class="top100_10_text text">
+            <p class="ranking">10</p> 
+            <p class="top100_title">사막에서 꽃을 피우듯</p>
+            <p class="top100_artist"> - &nbsp;&nbsp;우디(Woody)</p>
+          </li>
+          <div class="btn_box">
+            <li class="play_btn btn">
+              <span>
+                <img src="./img/icon/paly_30.png" alt="play_btn_img">
+               </span>
+              <span>
+                <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+              </span>
+            </li>
+            <li class="plus_btn btn">
+              <span>
+                <img src="./img/icon/plus.png" alt="plus_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+              </span>
+            </li>
+            <li class="download_btn btn">
+              <span>
+                <img src="./img/icon/download.png" alt="download_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+              </span>
+            </li>
+            <li class="video_btn btn">
+              <span>
+                <img src="./img/icon/video.png" alt="video_btn_img">
+              </span>
+              <span>
+                <img src="./img/icon/video_green.png" alt="video_btn_img">
+              </span>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="swiper-slide top15">
+      <ul class="top100_11 top">
+        <li class="top100_11_img img">
+          <img src="./img/contents/top100_11.jpg" alt="top100_img_11">
+        </li>
+        <li class="top100_11_text text">
+          <p class="ranking">11</p> 
+          <p class="top100_title">Baddie</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;IVE(아이브)</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+          </div>
+      </ul>
+      
+      <ul class="top100_12 top">
+        <li class="top100_12_img img">
+          <img src="./img/contents/top100_12.jpg" alt="top100_img_12">
+        </li>
+        <li class="top100_12_text text">
+          <p class="ranking">12</p> 
+          <p class="top100_title">Do or Die</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;임영웅</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+          </div>
+      </ul>
+        
+      <ul class="top100_13 top">
+        <li class="top100_13_img img">
+          <img src="./img/contents/top100_13.jpg" alt="top100_img_13">
+        </li>
+        <li class="top100_13_text text">
+          <p class="ranking">13</p> 
+          <p class="top100_title">사랑은 늘 도망가</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;임영웅</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+          </div>
+      </ul>
+      
+      <ul class="top100_14 top">
+        <li class="top100_14_img img">
+          <img src="./img/contents/top100_14.jpg" alt="top100_img_14">
+        </li>
+        <li class="top100_14_text text">
+          <p class="ranking">14</p> 
+          <p class="top100_title">헤어지자 말해요</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;박재정</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+          </div>
+      </ul>
+      <ul class="top100_15 top">
+        <li class="top100_15_img img">
+          <img src="./img/contents/top100_15.jpg" alt="top100_img_15">
+        </li>
+        <li class="top100_15_text text">
+          <p class="ranking">15</p> 
+          <p class="top100_title">I Love My Body</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;화사(HWASA)</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+        </div>
+      </ul>
+      </div>
+      <div class="swiper-slide top20">
+      <ul class="top100_16 top">
+        <li class="top100_16_img img">
+          <img src="./img/contents/top100_16.jpg" alt="top100_img_16">
+        </li>
+        <li class="top100_16_text text">
+          <p class="ranking">16</p> 
+          <p class="top100_title">I AM</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;IVE(아이브)</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+        </div>
+      </ul>
+    
+      <ul class="top100_17 top">
+        <li class="top100_17_img img">
+          <img src="./img/contents/top100_17.jpg" alt="top100_img_17">
+        </li>
+        <li class="top100_17_text text">
+          <p class="ranking">17</p> 
+          <p class="top100_title">Get A Guitar</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;RIZE</p>
+        </li> 
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+          </div>
+      </ul>
+    
+      <ul class="top100_18 top">
+        <li class="top100_18_img img">
+          <img src="./img/contents/top100_18.jpg" alt="top100_img_18">
+        </li>
+        <li class="top100_18_text text">
+          <p class="ranking">18</p> 
+          <p class="top100_title">잠시라도 우리</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;성시경, 나얼</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+        </div>
+      </ul>
+    
+      <ul class="top100_19 top">
+        <li class="top100_19_img img">
+          <img src="./img/contents/top100_19.jpg" alt="top100_img_19">
+        </li>
+        <li class="top100_19_text text">
+          <p class="ranking">19</p> 
+          <p class="top100_title">Bubble</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;STAYC(스테이씨)</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+        </div>
+      </ul>
+    
+      <ul class="top100_20 top">
+        <li class="top100_20_img img">
+          <img src="./img/contents/top100_20.jpg" alt="top100_img_20">
+        </li>
+        <li class="top100_20_text text">
+          <p class="ranking">20</p> 
+          <p class="top100_title">퀸카(Queencard)</p>
+          <p class="top100_artist"> - &nbsp;&nbsp;(여자)아이들</p>
+        </li>
+        <div class="btn_box">
+          <li class="play_btn btn">
+            <span>
+              <img src="./img/icon/paly_30.png" alt="play_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/paly_30_green.png" alt="play_btn_hover_img">
+            </span>
+          </li>
+          <li class="plus_btn btn">
+            <span>
+              <img src="./img/icon/plus.png" alt="plus_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/plus_green.png" alt="plus_btn_hover_img">
+            </span>
+          </li>
+          <li class="download_btn btn">
+            <span>
+              <img src="./img/icon/download.png" alt="download_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/download_green.png" alt="download_btn_hover_img">
+            </span>
+          </li>
+          <li class="video_btn btn">
+            <span>
+              <img src="./img/icon/video.png" alt="video_btn_img">
+            </span>
+            <span>
+              <img src="./img/icon/video_green.png" alt="video_btn_img">
+            </span>
+          </li>
+        </div>
+      </ul>
+      </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+<p class="title">
+  <a href="./subpage/period/index.html"><green>시대별 ></green></a>
+</p>
+
+<div class="period_box">
+  <div class="period">
+    <ul class="period_1960">
+      <div class="period_bg_01 square">
+        <li>
+          <img src="./img/contents/period_01.jpg" alt="period_1960_img">
+        </li>
+      </div>
+    </ul>
+  
+  
+    
+    <ul class="period_1970">
+      <div class="period_bg_02 circle">
+        <li>
+          <img src="./img/contents/period_02.jpg" alt="period_1960_img">
+        </li>
+      </div>
+    </ul>
+  
+    <ul class="period_1980">
+      <div class="period_bg_03 square">
+        <li>
+          <img src="./img/contents/period_03.jpg" alt="period_1960_img">
+        </li>
+      </div>
+    </ul>
+  
+    <ul class="period_1990">
+      <div class="period_bg_04 circle">
+        <li>
+          <img src="./img/contents/period_04.jpg" alt="period_1960_img">
+        </li>
+      </div>
+    </ul>
+  
+    <ul class="period_2000">
+      <div class="period_bg_05 square">
+        <li>
+          <img src="./img/contents/period_05.jpg" alt="period_1960_img">
+        </li>
+      </div>
+    </ul>
+  
+    <ul class="period_2010">
+      <div class="period_bg_06 circle">
+        <li>
+          <img src="./img/contents/period_06.jpg" alt="period_1960_img">
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>
+
+<div class="wrap">
+ <div class="post_box">
+
+  <div class="post-slider">
+
+    <div class="post">
+      <ul class="period_1960">
+        <div class="period_bg_01 square">
+          <li>
+            <img src="./img/contents/period_01.jpg" alt="period_1960_img">
+          </li>
+          <p> 1960년</p>
+        </div>
+      </ul>
+    </div>
+  
+    <div class="post">
+      <ul class="period_1970">
+        <div class="period_bg_02 circle">
+          <li>
+            <img src="img/contents/period_02.jpg" alt="period_1970_img">
+          </li>
+          <p>1970년</p>
+        </div>
+      </ul>
+    </div>
+
+    <div class="post">
+      <ul class="period_1980">
+        <div class="period_bg_03 square">
+          <li>
+            <img src="./img/contents/period_03.jpg" alt="period_1980_img">
+          </li>
+          <p>1980년</p>
+        </div>
+      </ul>
+    </div>
+
+    <div class="post">
+      <ul class="period_1990">
+        <div class="period_bg_04 circle">
+          <li>
+            <img src="./img/contents/period_04.jpg" alt="period_1990_img">
+          </li>
+          <p>1990년</p>
+        </div>
+      </ul>
+    </div>
+
+    <div class="post">
+      <ul class="period_2000">
+        <div class="period_bg_05 square">
+          <li>
+            <img src="./img/contents/period_05.jpg" alt="period_2000_img">
+          </li>
+          <p>2000년</p>
+        </div>
+      </ul>
+    </div>
+
+    <div class="post">
+      <ul class="period_2010">
+        <div class="period_bg_06 circle">
+          <li>
+            <img src="./img/contents/period_06.jpg" alt="period_2010_img">
+          </li>
+          <p>2010년</p>
+        </div>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="post_wrapper_box">
+
+    <div class="post-wrapper">
+
+      <div class="post_01 post">
+        <ul class="period_1970">
+          <div class="period_bg_02 circle">
+            <li>
+              <img src="./img/contents/period_02.jpg" alt="period_1970_img">
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="post_02 post">
+        <ul class="period_1980">
+          <div class="period_bg_03 square">
+            <li>
+              <img src="./img/contents/period_03.jpg" alt="period_1980_img">
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="post_03 post">
+        <ul class="period_1990">
+          <div class="period_bg_04 circle">
+            <li>
+              <img src="./img/contents/period_04.jpg" alt="period_1990_img">
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="post_04 post">
+        <ul class="period_2000">
+          <div class="period_bg_05 square">
+            <li>
+              <img src="./img/contents/period_05.jpg" alt="period_2000_img">
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="post_05 post">
+        <ul class="period_2010">
+          <div class="period_bg_06 circle">
+            <li>
+              <img src="./img/contents/period_06.jpg" alt="period_2010_img">
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="post_06 post">
+        <ul class="period_1960">
+          <div class="period_bg_01 square">
+            <li>
+              <img src="./img/contents/period_01.jpg" alt="period_1960_img">
+            </li>
+          </div>
+      </div> 
+
+    </div>
+  </div>
+</div>
+</div>
+
+<p class="title">
+  <a href="#!">멜론 DJ ></a>
+</p>
+
+
+<div class="melon_dj">
+
+  <ul class="melon_dj_1n dj_n">
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_01.jpg" alt="dj_1n_01_img">
+      </div>
+      <p>멜로디가 달콤한 몽글 케이팝모음</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_02.jpg" alt="dj_1n_02_img">
+      </div>
+      <p>싱그러운 여름 향기 가득한 여름</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_03.jpg" alt="dj_1n_03_img">
+      </div>
+      <p>여행갈 때 듣기 좋은 기분업 시켜주는 POP</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_04.jpg" alt="dj_1n_04_img">
+      </div>
+      <p>신나는게 제일 좋은 당신을 위한 텐션 UP! K-POP</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_05.jpg" alt="dj_1n_05_img">
+      </div>
+      <p>출근길을 모델처럼 유니크하게</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_06.jpg" alt="dj_1n_06_img">
+      </div>
+      <p>코끝에 가을, 감성 인디 음악</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_01.jpg" alt="dj_1n_01_img">
+      </div>
+      <p>멜로디가 달콤한 몽글 케이팝모음</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_02.jpg" alt="dj_1n_02_img">
+      </div>
+      <p>싱그러운 여름 향기 가득한 여름</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_01_03.jpg" alt="dj_1n_03_img">
+      </div>
+      <p>여행갈 때 듣기 좋은 기분업 시켜주는 POP</p>
+    </li>
+   
+  </ul>
+  
+    
+  </ul>
+  
+  <ul class="melon_dj_2n dj_n">
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_01.jpg" alt="dj_2n_01_img">
+      </div>
+      <p>듣기만 해도 연애하고 싶어지는 달달한 사랑노래</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_02.jpg" alt="dj_2n_02_img">
+      </div>
+      <p>내적 그루브 폭발 외힙</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_03.jpg" alt="dj_2n_03_img">
+      </div>
+      <p>선선해진 가을 날씨 즐기는 ISFJ의 감성팝</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_04.jpg" alt="dj_2n_04_img">
+      </div>
+      <p>90년대생들이 MP3에 넣고 다녔던 남자 발라드</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_05.jpg" alt="dj_2n_05_img">
+      </div>
+      <p>아침에 듣는 달달하고 기분 좋은 OST</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_06.jpg" alt="dj_2n_06_img">
+      </div>
+      <p>모닝커피와 R&B의 완벽한 조합</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_01.jpg" alt="dj_2n_01_img">
+      </div>
+      <p>듣기만 해도 연애하고 싶어지는 달달한 사랑노래</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_02.jpg" alt="dj_2n_02_img">
+      </div>
+      <p>내적 그루브 폭발 외힙</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_02_03.jpg" alt="dj_2n_03_img">
+      </div>
+      <p>선선해진 가을 날씨 즐기는 ISFJ의 감성팝</p>
+    </li>
+    
+  </ul>
+  
+  <ul class="melon_dj_3n dj_n">
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_01.jpg" alt="dj_3n_01_img">
+      </div>
+      <p>도입부부터 좋은 호불호 안갈리는 팝송</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_02.jpg" alt="dj_3n_02_img">
+      </div>
+      <p>들으면 바로 볼륨업하게 되는 케이팝</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_03.jpg" alt="dj_3n_03_img">
+      </div>
+      <p>명곡은 돌고 돈다 : 리메이크 노래 모음</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_04.jpg" alt="dj_3n_04_img">
+      </div>
+      <p> 원곡보다 더 좋은 잔잔한 선율의 어쿠스틱 POP</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_05.jpg" alt="dj_3n_05_img">
+      </div>
+      <p>밤 드라이브갈 때 꼭 챙겨야할 Groovy R&B</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_06.jpg" alt="dj_3n_06_img">
+      </div>
+      <p>가창력 폭발! 고음 발라드 노래방 애창곡&추천곡</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_01.jpg" alt="dj_3n_01_img">
+      </div>
+      <p>도입부부터 좋은 호불호 안갈리는 팝송</p>
+    </li>
+    <li>
+      <div class="dj_img">
+        <img src="./img/contents/dj_03_02.jpg" alt="dj_3n_02_img">
+      </div>
+      <p>들으면 바로 볼륨업하게 되는 케이팝</p>
+    </li>
+  </ul>
+
+</div>
+    
+
+
+<p class="title">
+  <a href="#!">애디터 추천 앨범 ></a>
+</p>
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper aditor_box">
+  <div class="swiper-wrapper aditor">
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_01.jpg" alt="aditor_01_img">
+      <div>JENNIE Spcial Single [You&Me]
+        <br>
+        <span>제니(JENNE)</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_02.jpg" alt="aditor_02_img">
+      <div>기대 - The 2nd Mini Album
+        <br>
+        <span>디오(D.O.)</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_03.jpg" alt="aditor_03_img">
+      <div>CHARUE
+        <br>
+        <span>Charli Puth</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_04.jpg" alt="aditor_04_img">
+      <div>HEAT
+        <br>
+        <span>(여자)아이들</span>
+      </div>
+      
+    </div>
+    <div class="swiper-slide">
+        <img src="./img/contents/aditor_05.jpg" alt="aditor_05_img">
+        <div>찬바람이 불면
+          <br>
+          <span>HYNN(박혜원)</span>
+        </div>
+        
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_06.jpg" alt="aditor_06_img">
+      <div>문
+        <br>
+        <span>김세정</span>
+      </div>
+      
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_07.jpg" alt="aditor_07_img">
+      <div>잠시라도 우리
+        <br>
+        <span>성시경, 나얼</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_08.jpg" alt="aditor_08_img">
+      <div>울었어(feat. 정승환)
+        <br>
+      <span>딘딘</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_09.jpg" alt="aditor_09_img">
+      <div>WEAK
+        <br>
+      <span>로꼬</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="./img/contents/aditor_10.jpg" alt="aditor_10_img">
+      <div>RA TA TA
+        <br>
+      <span>에일리(Ailee)</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="title">
+  <a href="./subpage/artist/index.html"><green>아티스트 채널 ></green></a>
+</p>
+
+<section class="center_box">
+<div class="center">
+  <div>
+    <li>
+      <img src="./img/contents/artist_01.jpg" alt="artist_01_img">
+      <p>뎁트(Dept)</p>
+    </li>
+  </div>
+  <div>
+    <li>
+      <img src="./img/contents/artist_02.jpg" alt="artist_02_img">
+      <p>마마무(Mamamoo)</p>
+    </li>
+  </div>
+  <div>
+    <li>
+      <img src="./img/contents/artist_03.jpg" alt="artist_03_img">
+      <p>악뮤(AKMU)</p>
+    </li>
+  </div>
+  <div>
+    <li>
+      <img src="./img/contents/artist_04.jpg" alt="artist_04_img">
+      <p>디오(D.O.)</p>
+    </li>
+  </div>
+  <div>
+    <li>
+      <img src="./img/contents/artist_05.jpg" alt="artist_05_img">
+      <p>IVE(아이브)</p>
+    </li>
+  </div>
+</div>
+</section>
+
+<p class="title">
+  <a href="#!">매거진 ></a>
+</p>
+
+<input type="checkbox" id="chk_magazine_01">
+<input type="checkbox" id="chk_magazine_02">
+<input type="checkbox" id="chk_magazine_03">
+<input type="checkbox" id="chk_magazine_04">
+<input type="checkbox" id="chk_magazine_05">
+
+<div class="magazine_box">
+  <ul class="magazine">
+    <label for="chk_magazine_01">
+    <li class="magazine_01">
+      <div>
+        <img src="./img/contents/magazine_01.jpg" alt="magazine_01_img">
+      </div>
+      <div class="explain_box explain_01">
+        <p class="magazine_title">한층 더 성숙하게 돌아온 정국, [3D feat. Jack Harlow]
+        </p>
+        <p class="magazine_explain_01 explain">방탄소년단 정국이 두번째 싱글 [3D feat. Jack Harlow]로 돌아왔습니다. 정국의 매력적인 보컬로 한층 더 섹시하게 완성된 이번 신곡과 멜론 독접 이미지까지! 지금 만나보세요.
+        </p>
+        <div class="magazine_button_01 button">
+          <p>자세히 보러가기</p>
+        </div>
+      </div>
+    </li>
+    </label>
+
+    <label for="chk_magazine_02">
+    <li class="magazine_02">
+      <div>
+        <img src="./img/contents/magazine_02.jpg" alt="magazine_02_img">
+      </div>
+      <div class="explain_box explain_02">
+        <p class="magazine_title">[STARANGER]로 돌아온 선미가 추천하는 듣는 순간 이곳을 런웨이로 만들어 줄 플레이리스트!
+        </p>
+        <p class="magazine_explain_02 explain">선미가 1년 4개월만에 디지털 싱글 [STRANGER]로 돌아왔습니다!
+        이번 디지털 싱글 [STRANGER]는 선미스러움으로 가득 채운 앨범인데요, 특히 타이틀곡 'STRANGER'는 오랜만에 들려드리는 선미팝으로 선미만의 매력적인 보컬과 다채로운 퍼포먼스로 가득 채워진 곡입니다.
+        </p>
+        <div class="magazine_button_02 button">
+          <p>자세히 보러가기</p>
+        </div>
+      </div>
+      
+    </li>
+    </label>
+
+    <label for="chk_magazine_03">
+    <li class="magazine_03 ">
+      <div>
+        <img src="./img/contents/magazine_03.jpg" alt="magazine_03_img">
+      </div>
+      <div class="explain_box explain_03">
+        <p class="magazine_title">'문'뒤에 감춰놓았던 김세정의 반전 매력, [문(門)]
+        </p>
+        <p class="magazine_explain_03 explain">2년 5개월 만에 청량함과 섹시한 매력을 모두 담은 첫번째 정규앨범 [문(門)]으로 김세정이 돌아왔습니다.
+        미지의 세계로 향하는 열린 '문'과 '문'뒤에 감춰놓았던 강렬한 수를 통해 김세정의 반전 매력을 보여준다고 합니다. 
+        </p>
+        <div class="magazine_button_03 button">
+          <p>자세히 보러가기</p>
+        </div>
+      </div>
+      
+    </li>
+    </label>
+
+    <label for="chk_magazine_04">
+    <li class="magazine_04 ">
+      <div>
+        <img src="./img/contents/magazine_04.jpg" alt="magazine_04_img">
+      </div>
+      <div class="explain_box explain_04">
+        <p class="magazine_title">권진아와 함께 보내는 달콤청량한 여름, 'Love Me Love Me'
+        </p>
+        <p class="magazine_explain_04 explain">권진아의 새로운 싱글 'Love Me Love Me'가 발매되었습니다. 지난 3월, EP [The Flag]로 새로운 모습을 보여주었던 권진아가 이번에는 여름을 청량하고 달콤하게 물들일 곡으로 돌아왔는데요!
+        권진아 'Love Me Love Me' 뮤직 비디오 비하인드 스토리를 멜론 매거진에 공개합니다!
+        </p>
+        <div class="magazine_button_04 button">
+          <p>자세히 보러가기</p>
+        </div>
+      </div>
+      
+    </li>
+    </label>
+
+    <label for="chk_magazine_05">
+    <li class="magazine_05 ">
+      <div>
+        <img src="./img/contents/magazine_05.jpg" alt="magazine_05_img">
+      </div>
+      <div class="explain_box explain_05">
+        <p class="magazine_title">싱그럽다. 두 청춘의 푸른 밤이, 이 계절이. 볼빨간사춘기 '여름날 (feat. 하현상)'
+        </p>
+        <p class="magazine_explain_05 explain">볼빨간사춘기가 싱글 '여름날 (feat. 하현상)'로 여러분을 찾아왔습니다. 싱글 소개와 함께 오피셜 라이브 클립 촬영 현장 비하인드까지! 볼빨간사춘기의 싱그러운 여름이 가득한 현장으로 멜론가족여러분들을 초대합니다.
+        </p>
+        <div class="magazine_button_05 button">
+          <p>자세히 보러가기</p>
+        </div>
+      </div>
+      
+    </li>
+    </label>
+  </ul>
+</div> <!--magazine-->
+
+</div>
+
+
+<section class="event_banner_box">
+  
+  <ul class="event_banner">
+    <li>
+      <img src="./img/banner/banner_melon_tichet.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_bora.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_green.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_orange.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_pink.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_red.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_skyblue.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_yellow.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet_gray.png" alt="ticket_img">
+    </li>
+    <li>
+      <img src="./img/banner/banner_melon_tichet.png" alt="ticket_img">
+    </li>
+  </ul>
+
+</section> <!--event_banner-->
+
+
+<input type="radio" id="chk_center" name="footer">
+<input type="radio" id="chk_service" name="footer">
+<input type="radio" id="chk_info" name="footer">
+<input type="radio" id="chk_ask" name="footer">
+
+<footer class="footer">
+
+  <div class="footer_logo_box">
+
+    <div class="footer_logo">
+      <a href="#">
+        <img src="./img/bi/logo_opecity.png" alt="footer_logo_img">
+      </a>
+    </div>
+
+    <ul class="footer_sns">
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  
+  </div>
+
+  <div class="footer_menu_box">
+  
+    <div class="footer_center footer_menu">
+
+      <label for="chk_center">
+        <span>고객센터</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="notice_box">
+        <li>공지사항</li>
+        <li>이벤트</li>
+        <li>문의전화 1566-7727</li>
+        <li>평일 09:00-18:00, 유료</li>
+      </ul>
+
+    </div>
+
+    <div class="footer_service footer_menu">
+
+      <label for="chk_service">
+        <span>Melon서비스</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="service_box">
+        <li>멜론티켓</li>
+        <li>멜론스튜디오</li>
+        <li>멜론라운지</li>
+        <li>Window플레이어</li>
+        <li>Mac플레이어</li>
+        <li>Ipad</li>
+      </ul>
+
+    </div>
+  
+    <div class="footer_info footer_menu">
+
+      <label for="chk_info">
+        <span>기업정보</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="info_box">
+        <li>회사소개</li>
+        <li>인재채용</li>
+        <li>
+          (주)카카오엔터테인먼트
+        <br>
+          경기도 성남시 분당구 판교역로 221
+        <br>
+          대표이사 : 이진수, 김성수
+        <br>
+          사업자등록번호 : 220-88-02594
+        <br>
+          이메일 : melon_info@kakaoent.com
+          호스팅서비스사업자 : (주)카카오엔터테인먼트
+        <br>
+        <a href="#!">
+          이용약관 및 개인정보 처리 방침 상세내용확인 >
+        </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="footer_ask footer_menu">
+
+      <label for="chk_ask">
+        <span>문의</span>
+        <span>∨</span>
+      </label>
+
+      <ul class="ask_box">
+      
+        <li>자주하는 질문</li>
+        <li>나의 문의내역</li>
+        <li>제휴/프로모션 문의</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="copy_right">
+    <p>©Kakao Entertainment Corp.</p>
+  </div>
+
+  <ul class="terms">
+    <li>
+      <a href="#!">
+        이용약관
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        위치기반서비스 이용약관
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        개인정보처리방침
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        청소년보호정책
+      </a>
+    </li>
+    <br class="br">
+    <li>
+      <a href="#!">
+        이메일주소 무단수집거부
+      </a>
+    </li>
+    <li>
+      <a href="#!">
+        파트너센터
+      </a>
+    </li>
+  </ul>
+
+</footer>
+
+<div class="play_bar_box">
+  <div class="play_bar">
+    <div class="play_img">
+      <img src="./img/contents/playing_bar_img_50x50.jpg" alt="play_bar_img">
+    </div>
+    <ul class="music">
+      <li><p class="album">사건의 지평선</p></li>
+      <li><p class="artist">윤하(YOUNHA)</p></li>
+    </ul>
+    <ul class="play_menu">
+      <li>
+        <img src="./img/icon/eq.png" alt="eq_img">
+      </li>
+      <li>
+        <img src="./img/icon/shuffle.png" alt="shuffle_img">
+      </li>
+      <li>
+        <img src="./img/icon/backward.png" alt="backward_img">
+      </li>
+      <li>
+        <img src="./img/icon/paly_30.png" alt="play_img">
+      </li>
+      <li>
+        <img src="./img/icon/forward.png" alt="forward_img">
+      </li>
+      <li>
+        <img src="./img/icon/repeat.png" alt="repeat_img">
+      </li>
+      <li>
+        <i class="fa-solid fa-volume-high"></i>
+      </li>
+      <li>
+        <img src="./img/icon/music_bar.png" alt="music_bar_img">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="aside">
+  <div class="top_btn">
+    <a href="#">
+      <img src="./img/bi/symbol_01.png" alt="top_btn_img">
+    </a>
+  </div>
+</div>
+
+
+<!--#visual_main-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/js.js"></script>
+
+
+
+</body>
+</html>
